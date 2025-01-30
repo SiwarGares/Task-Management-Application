@@ -4,8 +4,8 @@ const {
     getMyTasks,
     updateTask,
     deleteTask,
-} = require('../controllers/taskController');
-const { protect } = require('../middlewares/authMiddleware');
+} = require('../controllers/task-controller');
+const { protect } = require('../middlewares/auth-middleware');
 const router = express.Router();
 
 router.post('/', protect, createTask);
